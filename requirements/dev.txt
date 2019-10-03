@@ -1,0 +1,6 @@
+-r base.txt
+-r test.txt
+bumpversion==0.5.3
+ipython==7.4.0
+mkdocs==1.0.4
+pdbpp==0.9.14

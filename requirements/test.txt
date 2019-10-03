@@ -1,0 +1,13 @@
+-r base.txt
+asynctest==0.12.3
+flake8==3.7.7
+isort==4.3.16
+model-mommy==1.6.0
+pytest-aiohttp==0.3.0
+pytest-cov==2.6.1
+pytest-django==3.4.8
+pytest-env==0.6.2
+pytest-pythonpath==0.7.3
+pytest==4.4.0
+safety==1.8.5
+vcrpy==2.0.1
