@@ -1,8 +1,10 @@
 from challenge.application.routes import APPLICATION_ROUTES
+from challenge.customer.routes import CUSTOMER_ROUTES
 
 ROUTES = []
 
 ROUTES += APPLICATION_ROUTES
+ROUTES += CUSTOMER_ROUTES
 
 
 def setup_routes(app):

@@ -89,6 +89,7 @@ INSTALLED_APPS = [
     # 'django_celery_beat',
 
     'challenge.application',
+    'challenge.customer'
     # 'dmitri.extensions.correios',
     # 'dmitri.freight',
     # 'dmitri.cities',
