@@ -9,7 +9,9 @@ from django.db.models.signals import post_migrate, pre_migrate
 from django.dispatch import receiver
 from simple_settings import settings
 
-from challenge.middlewares.exception_handler import exception_handler_middleware
+from challenge.middlewares.exception_handler import (
+    exception_handler_middleware
+)
 from challenge.middlewares.version import version_middleware
 from challenge.routes import setup_routes
 

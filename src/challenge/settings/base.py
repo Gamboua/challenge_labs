@@ -1,6 +1,5 @@
 import os
 import sys
-from decimal import Decimal
 from distutils.util import strtobool
 
 import dj_database_url

@@ -1,6 +1,5 @@
 import asyncio
 import datetime
-from decimal import Decimal
 
 import pytest
 from aiocache import caches

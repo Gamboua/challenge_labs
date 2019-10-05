@@ -1,6 +1,4 @@
 import pytest
-
-from django.core.exceptions import ValidationError
 from model_mommy import mommy
 
 
