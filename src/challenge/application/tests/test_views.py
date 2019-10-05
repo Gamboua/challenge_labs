@@ -9,7 +9,7 @@ class TestTokenCreateView:
         return app.router['token-create'].url_for()
 
     @pytest.fixture
-    def invalid_paylod(self):
+    def invalid_payload(self):
         return {}
 
     @pytest.fixture
@@ -20,9 +20,9 @@ class TestTokenCreateView:
         self,
         client,
         url,
-        invalid_paylod
+        invalid_payload
     ):
-        response = await client.post(path=url, json=invalid_paylod)
+        response = await client.post(path=url, json=invalid_payload)
         data = await response.json()
 
         assert response.status == 400

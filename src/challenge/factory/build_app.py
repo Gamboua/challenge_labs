@@ -9,6 +9,7 @@ from django.db.models.signals import post_migrate, pre_migrate
 from django.dispatch import receiver
 from simple_settings import settings
 
+from challenge.middlewares.exception_handler import exception_handler_middleware
 from challenge.middlewares.version import version_middleware
 from challenge.routes import setup_routes
 
@@ -18,7 +19,8 @@ logger = logging.getLogger(__name__)
 def build_app():
     app = web.Application(
         middlewares=[
-            version_middleware
+            version_middleware,
+            exception_handler_middleware
         ]
     )
 
