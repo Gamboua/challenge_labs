@@ -133,3 +133,9 @@ DATABASES_POSTGRES_STATEMENT_TIMEOUT = int(
 DATABASES_POSTGRES_STATEMENT_TIMEOUT_MIGRATION = int(
     os.getenv('DATABASES_POSTGRES_STATEMENT_TIMEOUT_MIGRATION', '300')
 ) * 1000
+
+CATALOG_CONFIG = {
+    'url': os.getenv(
+        'CATALOG_PRODUCT_URL', 'http://challenge-api.luizalabs.com'
+    )
+}

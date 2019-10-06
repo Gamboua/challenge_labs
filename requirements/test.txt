@@ -11,3 +11,4 @@ pytest-pythonpath==0.7.3
 pytest==4.4.0
 safety==1.8.5
 vcrpy==2.0.1
+aioresponses==0.6.0
