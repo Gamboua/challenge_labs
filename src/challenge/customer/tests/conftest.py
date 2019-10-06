@@ -18,3 +18,11 @@ def customer(customer_email):
 @pytest.fixture
 def customer_url(app, customer_email):
     return app.router['customer'].url_for(email=customer_email)
+
+
+@pytest.fixture
+def valid_payload(customer_email):
+    return {
+        'name': 'Fulano',
+        'email': customer_email
+    }
