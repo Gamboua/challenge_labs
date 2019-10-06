@@ -84,14 +84,9 @@ TIME_ZONE = 'UTC'
 STATIC_URL = '/static/'
 INSTALLED_APPS = [
     'django.contrib.contenttypes',
-
-    # 'django_celery_beat',
-
     'challenge.application',
-    'challenge.customer'
-    # 'dmitri.extensions.correios',
-    # 'dmitri.freight',
-    # 'dmitri.cities',
+    'challenge.customer',
+    'challenge.wish_list'
 ]
 
 TEMPLATES = [
