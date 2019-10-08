@@ -12,7 +12,7 @@ Run migrations:
 make migrate
 ```
 
-## Testing
+## Development
 Run tests:
 ```
 make test
@@ -30,6 +30,11 @@ make lint
 Run fix python imports:
 ```
 make fix-python-import
+```
+
+Run shell:
+```
+make shell
 ```
 
 ## Server
@@ -51,8 +56,6 @@ List app (you can retrieve your valid token here)
 make list-apps
 ```
 
-## DOCS
-
 Get token by URL:
 ```
 POST application/token/
@@ -65,5 +68,7 @@ Content-Type: application/json
 }
 
 ```
+
+## API DOCS
 
 [CUSTOMER API](docs/api/customer.md)
