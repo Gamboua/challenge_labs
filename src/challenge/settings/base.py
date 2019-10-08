@@ -85,8 +85,7 @@ STATIC_URL = '/static/'
 INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'challenge.application',
-    'challenge.customer',
-    'challenge.wish_list'
+    'challenge.customer'
 ]
 
 TEMPLATES = [

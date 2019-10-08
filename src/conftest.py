@@ -70,3 +70,27 @@ def expired_token(application):
         key=jwt_key,
         algorithm='HS256'
     )
+
+
+@pytest.fixture
+def product_id():
+    return '6c49be9c-f87f-9791-73fc-ce5b7c5d44dd'
+
+
+@pytest.fixture
+def catalog_url(product_id):
+    settings.CATALOG_CONFIG['url'] = 'http://catalog.com'
+
+    catalog_url = settings.CATALOG_CONFIG['url']
+    return f'{catalog_url}/api/product/{product_id}'
+
+
+@pytest.fixture
+def catalog_response(product_id):
+    return {
+        'price': 55.9,
+        'image': 'http://challenge-api.luizalabs.com/b.jpg',
+        'brand': 'tramontina',
+        'id': product_id,
+        'title': 'Jogo de Inox para Torta Copacabana 7 Peças'
+    }

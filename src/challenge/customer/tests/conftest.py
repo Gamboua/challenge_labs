@@ -16,6 +16,15 @@ def customer(customer_email):
 
 
 @pytest.fixture
+def wishlist(customer, product_id):
+    return mommy.make(
+        'customer.Wishlist',
+        customer=customer,
+        product_id=product_id
+    )
+
+
+@pytest.fixture
 def customer_url(app, customer_email):
     return app.router['customer'].url_for(email=customer_email)
 
@@ -26,3 +35,10 @@ def valid_payload(customer_email):
         'name': 'Fulano',
         'email': customer_email
     }
+
+
+@pytest.fixture
+def customer_wishlist_url(app, customer_email):
+    return app.router['customer-wishlist-list-create'].url_for(
+        email=customer_email
+    )

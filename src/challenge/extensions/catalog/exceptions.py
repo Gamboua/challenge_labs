@@ -1,3 +1,6 @@
+from challenge.exceptions.api import NotFound
+
+
 class CatalogException(Exception):
     pass
 
@@ -10,3 +13,7 @@ class CatalogResponseException(CatalogException):
             f'Reason: {response.reason}, '
             f'code: {response.status}'
         )
+
+
+class ProductNotFound(NotFound):
+    message = 'Product not found.'
