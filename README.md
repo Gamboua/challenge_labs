@@ -1,4 +1,7 @@
 ## Installation
+
+**PYTHON >= 3.7.0**
+
 Install dependencies:
 ```
 make dependencies
@@ -9,19 +12,48 @@ Run migrations:
 make migrate
 ```
 
-Create an app:
+## Testing
+Run tests:
 ```
-make create-app name=<choose a good name>
+make test
+
+or
+
+make test-matching -k some-piece-of-text
 ```
 
-List app (you can get a valid token here)
+Run code lint:
+```
+make lint
+```
+
+Run fix python imports:
+```
+make fix-python-import
+```
+
+## Server
+
+Run project:
+```
+make run
+```
+
+## API - Authentication
+
+Create an client_id and secret:
+```
+make create-app name=choose-a-good-name
+```
+
+List app (you can retrieve your valid token here)
 ```
 make list-apps
 ```
 
-## API
+## DOCS
 
-Get token:
+Get token by URL:
 ```
 POST application/token/
 
@@ -33,3 +65,5 @@ Content-Type: application/json
 }
 
 ```
+
+[CUSTOMER API](docs/api/customer.md)
