@@ -1,5 +1,5 @@
 aiocache[redis]==0.10.1
-aiohttp==3.5.4
+aiohttp==3.7.4
 click==7.0
 dj-database-url==0.5.0
 django-postgreconnect==0.2
